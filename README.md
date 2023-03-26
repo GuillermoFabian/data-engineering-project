@@ -19,19 +19,20 @@ https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_5_batc
 - Install Google Cloud CLI
 https://cloud.google.com/sdk/docs/install-sdk
 
-### 1) Download data with Prefect to Data Lake and schedule for daily runs
+### 1) Download data with Prefect to Data Lake
 https://s3.amazonaws.com/tripdata/index.html
 ![bucket_data](/img/bucket_data.png)
-### 2) Submit spark job with Prefect to transform the table with google sdk and generate the Data Warehouse Daily Aggregated table
+### 2) Submit spark job with Prefect to transform the table with google sdk and generate the Data Warehouse daily aggregated table
 - Upload spark_big_query.py to google cloud bucket
 
 ![spark_code](/img/spark_code.png)
 
+- Aggregated Daily Table in the Data Warehouse
 ![aggr_table](/img/aggr_table.png)
 
 - Submit job with Prefect
 ![spark_job](/img/spark_job.png)
-- 
+
 ### 3) Add date partition in Spark Job
 Column = 'duration_day'
 
@@ -43,7 +44,13 @@ Column = 'duration_day'
 https://lookerstudio.google.com/reporting/0c4472d8-1ffb-40d5-a4ed-bb5608f6548b
 ### 5) Schedule for future months
 - Deploy with date parametrized variables
+
 ![parameters_schedule_run](/img/parameters_schedule_run.png)
+![schedule_run](/img/schedule_run.png)
+
+- Succesful scheduled parametrized Prefect run
+![successful_run](/img/successful_run.png)
+
 
 
 
