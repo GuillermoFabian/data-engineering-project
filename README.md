@@ -30,10 +30,11 @@ https://s3.amazonaws.com/tripdata/index.html
 ![aggr_table](/img/aggr_table.png)
 
 - Submit job with Prefect
-![spark_run](/img/spark_run.png)
+![spark_job](/img/spark_job.png)
 - 
 ### 3) Add date partition in Spark Job
 Column = 'duration_day'
+
 ![partition](/img/partition.png)
 
 ### 4) Create Dashboard 
@@ -42,7 +43,7 @@ Column = 'duration_day'
 https://lookerstudio.google.com/reporting/0c4472d8-1ffb-40d5-a4ed-bb5608f6548b
 ### 5) Schedule for future months
 - Deploy with date parametrized variables
-![parametrized_schedule_run](/img/parametrized_schedule_run.png)
+![parameters_schedule_run](/img/parameters_schedule_run.png)
 
 
 
