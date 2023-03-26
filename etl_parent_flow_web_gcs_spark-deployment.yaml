@@ -1,0 +1,54 @@
+###
+### A complete description of a Prefect Deployment for flow 'etl-parent-flow-web-gcs-spark'
+###
+name: Parametrized Bikes ETL
+description: null
+version: 2fd0942eb7b04390277b86741a38b4ec
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags: []
+parameters: {"catchup_load": true, "years": [2017,2018], "target_month":13}
+schedule: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: etl-parent-flow-web-gcs-spark
+manifest_path: null
+storage: null
+path: /Users/guillermofigueroa/Documents/Advanced-Training/data_engineering_project
+entrypoint: etl_web_gcb_spark_to_gcs_parametrized.py:etl_parent_flow_web_gcs_spark
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    catchup_load:
+      title: catchup_load
+      position: 0
+      type: boolean
+    years:
+      title: years
+      position: 1
+      type: array
+      items:
+        type: integer
+    target_month:
+      title: target_month
+      position: 2
+      type: integer
+  required:
+  - catchup_load
+  - years
+  - target_month
+  definitions: null

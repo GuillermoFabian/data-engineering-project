@@ -1,0 +1,7 @@
+pandas==1.5.2
+pandas-gbq==0.18.1
+prefect==2.7.7
+prefect-gcp==0.2.4
+prefect-shell==0.1.5
+prefect-sqlalchemy==0.2.2
+pytz==2022.7.1
