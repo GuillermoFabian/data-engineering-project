@@ -9,6 +9,13 @@ In order to accomplish this we need to first extract the
 data from the Ny Bike Sharing website to a GCB and then 
 we will aggregate the data into daily values by running a PySpark Job.
 
+## Tools:
+- GCS Buckets
+- Google Big Query
+- Prefect
+- Google Dataproc - Pyspark
+- Google Data Studio
+
 ### Configuration:
 - Create virtualenv and install requirements.txt
 - Create a Data Lake in GCP
